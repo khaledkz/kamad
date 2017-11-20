@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+<style>
+	body{
+	background-color: #afdaff;
+}
+
+h1{
+	font-size: 3em;
+	font-weight: bold;
+}
+
+
+h1 b{
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.contenido{
+	background-color: white;
+	padding: 40px;
+	margin: 0 auto;
+	margin-top: 200px;
+	
+}
+.center{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;	
+}
+.myv{
+	font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+	    color: #fff!important;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+	text-align: center;
+	cursor: pointer;
+	
+}
+.bbb{
+	font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+  	text-align: center
+}
+</style>
+
+</head>
+<body>
+ <!--Script get ip with JavaScript by David Porras-->
+<div class="container text-center">
+<div class="contenido">
+	<p style="text-align:center">شكرا على اشتراكم في الموقع سيتم ارسال رمز تاكيد الدخول الى رقمك الهاتفي</p> 
+	<p style="text-align:center">من فضلك ادخل الرمز المكون من 6 ارقام</p> 
+	<div  class="center" >
+	<input class="bbb" type="number" placeholder="رمز تاكيد الحساب">
+	</div>
+	<br/>
+	<div class="center">
+		
+	<button class="myv" onClick="myaler()" >تاكيد</button>
+	</div>
+
+	<p style="text-align:center">اذا لم يصلك الرمز خلال ثلاث دقائق عاود التسجيل مجددا</p> 
+	<div class="center">
+	<a href="/createAccount"><button class="myv" >إنشاء حساب </button></a>
+	</div>
+   </div>
+</div>
+<!--Script get ip with JavaScript by David Porras-->
+
+<script type="text/javascript">
+
+function myaler(){return alert('الرمز غير صحيح')}
+                
+</script>
+ 
+</body>
+</html>
